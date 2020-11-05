@@ -1,5 +1,6 @@
 const express=require("express")
 const router=new express.Router()
+const Room=require("../models/Room")
 
 router.post("/room",async(req,res)=>{
     const room= new Room({...req.body})
