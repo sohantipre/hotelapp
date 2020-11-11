@@ -1,0 +1,61 @@
+.form{
+    
+    width:100vw;
+    height: 100vh;
+    display:flex;
+    //  background:url('../images/background.jpg');
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // background-image: url('https://media.alienwarearena.com/media/wallpapers-3d-hotel-design-hd-wallpaper-artistic-hd-wallpapers.jpg');
+    background-image: url('https://i.pinimg.com/originals/46/1d/25/461d254f8563f8945ce3a385f289df17.jpg');
+   
+    background-size: cover;
+    
+  
+    h1{
+        color: rgb(170, 121, 36);
+    }
+    
+  
+}
+
+
+.signin__form{
+    height: 30%;
+    width: 40%;
+    background: burlywood;
+    color: whitesmoke;
+}
+.formcomponent{
+    margin-bottom:1rem;
+    border:2px solid white;
+    ::placeholder{
+        color:white;
+    }
+    
+}
+.errormessage{
+    color:red
+}
+// .input{
+//      ;
+// }
+
+.errorbox{
+
+margin-bottom: 2rem;
+margin-top: 2rem;
+width:14rem;
+height:3rem;
+color: red;
+}
+
+.actionbutton{
+
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    width:12rem;
+    height:3rem;
+    color: red;
+    }

@@ -6,12 +6,19 @@ const multer=require('multer')
 const sharp=require('sharp')
 
 
+
+
+
+
+
+
+
 router.post("/user",async(req,res)=>{
     const user=new User({...req.body})
     try{
         await user.save()
-        const token=await user.generateauthtoken()
-        res.status(201).send({user,token})
+        // const token=await user.generateauthtoken()
+        res.status(201).send(user)
     }catch(e){
         res.status(400).send(e)
     }
@@ -27,6 +34,36 @@ res.send({token,user})}
       res.status(400).send(e)
   }
 })
+router.post("/payment" , auth ,  (req,res) => {
+  const { product , token } = req.body;
+  const idempotencyKey = uuid();
+
+  return stripe.customers.create({
+    email: token.email,
+    source: token.id
+  }).then(customer => {
+    stripe.charges.create({
+      amount: product.price * 100,
+      currency: 'usd',
+      customer: customer.id,
+      receipt_email: token.email,
+      description: `purchase of ${product.name}`,
+      shipping: {
+        name: token.card.name,
+        address:{
+          country: token.card.address_country,
+
+        }
+      }
+    } , {idempotencyKey})
+  })
+  .then((result) => {
+    res.status(200).json(result);
+  })
+  .catch((err) => console.log(err))
+
+})
+
 router.get('/user/me',auth,async(req,res)=>{
    res.send(req.user)
 })
@@ -36,13 +73,15 @@ try{
     return token.token!==req.token
   })
   await req.user.save()
-  res.send()
+  res.send({})
 }
 catch(e){
   res.status(500).send(e)
 }
 
 })
+
+
 
 router.get("/user/:id",async(req,res)=>{
     const _id = req.params.id;
@@ -110,4 +149,4 @@ await req.user.save()
 //     }
 
 // })
-// module.exports=router
+module.exports=router
