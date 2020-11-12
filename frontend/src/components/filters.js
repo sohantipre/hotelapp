@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import {sortbycapacity,sortbyprice,sortbyfloor} from './sorting'
+import {sortbycapacity,sortbypriceLowtoHigh , sortbypriceHightoLow ,sortbyfloor} from './sorting'
 import Room from './room'
 function Filter(){
 
@@ -54,7 +54,17 @@ return <div className='filterinput'>
 <input className='filtercomponent' type='number' name='number' onChange={handlenumber} value={inputstate.number}  placeholder='no. of guests'></input>
 <input className='filtercomponent' type='text'  name='floor' value={inputstate.floor} onChange={handlefloor} placeholder='floor '></input>
 <input className='filtercomponent' type='text' name='price' value={inputstate.price} onChange={handleprice} placeholder='price'></input>
-
+<select  className="select" onChange={(e)=>{
+        if(e.target.value==='lowtohigh'){
+            sortbypriceLowtoHigh();
+        }
+        else if(e.target.value==='hightolow'){
+            sortbypriceHightoLow()
+        }
+}}>
+    <option value='lowtohigh'>AMOUNT</option>
+    <option value='hightolow' >DATE</option>
+</select>
 <div className='filter'>
 {inputstate.rooms.map(createroom)}
 </div>
