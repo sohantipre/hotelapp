@@ -14,7 +14,10 @@ const data={
     max_capacity:rooms[props.match.params.id-1].capacity,
     floor:rooms[props.match.params.id-1].floor,
     details:rooms[props.match.params.id-1].info,
-    url:rooms[props.match.params.id-1].url
+    url:rooms[props.match.params.id-1].url,
+    number:rooms[props.match.params.id-1].num,
+    key:rooms[props.match.params.id-1].key,
+    id:rooms[props.match.params.id-1].id
     
 }
 axios.post('http://127.0.0.1:5000/room',data,{'headers' : {'Authorization': "Bearer " + localStorage.getItem('token')}}).then((res)=>{
@@ -24,6 +27,7 @@ axios.post('http://127.0.0.1:5000/room',data,{'headers' : {'Authorization': "Bea
 })
 
 }
+
 
 
 return <div className='detail'>
@@ -37,6 +41,7 @@ return <div className='detail'>
     <h2>DETAILS:{rooms[props.match.params.id-1].info}</h2>
     
     <button className='cartbutton'  onClick={addtocart} >ADD TO CART</button>
+    {/* <button className='cartbutton' onClick={deletecart}>Delete from Cart</button>  */}
 
     <StripeButton price={rooms[props.match.params.id-1].price} name={rooms[props.match.params.id-1].name} description={rooms[props.match.params.id-1].description}></StripeButton>
 

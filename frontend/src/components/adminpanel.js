@@ -1,58 +1,4 @@
-// import React from 'react'
-// import axios from 'axios'
-// import {useHistory} from 'react-router-dom'
-// import Imageuploader from 'react-images-upload'
-// import {useState} from 'react'
 
-
-// function AdminPanel(){
-
-// const [signupstate,setstate]=useState({
-//    name:''
-// })
-// const history=useHistory()
-// function handleclick(e){
- 
-//    axios.post("http://127.0.0.1:5000/user/logout" , {} , {'headers' : {'Authorization': "Bearer " + localStorage.getItem('token')}})
-//    .then((res)=>{
-//       console.log("logged out");
-//      history.push('/')
-// })
-// .catch((e)=>history.push('/signup'))
-
-// }
-// axios.get('http://127.0.0.1:5000/user/me',{'headers':{'Authorization':"Bearer "+localStorage.getItem('token')}}).then((res)=>{
-//    setstate({name:res.data.userName})
-//    console.log('successs')
-// })
-
-
-// return <div className='adminpanel'>
-//    {/* <img className="profileimg" src={picstate.picture}></img>  */}
-//    <div >HI {signupstate.name } !!</div>
-
-    
-
-   
-//    {/* <Imageuploader 
-//     withIcon={false}
-//     withPreview={true}
-//     label=""
-//     buttonText="profilepic"
-  
-//    onChange={handlepic}
-//    imgExtension={['.jpg','.png','.jpeg']}
-//    maxFileSize={10000000}/></div> */}
-  
-//    <h2> ABOUT</h2>
-//    <h2>SETTINGS</h2>
-//     <h2>LOGOUT</h2>
-//    <button onClick={handleclick}></button>
-//    </div> 
-
-
-// }
-// export default AdminPanel
 
 import React, { useState } from "react";
 import { Link , useHistory } from "react-router-dom";
@@ -86,10 +32,12 @@ function Navbar() {
         console.log(e);
       })
   };
-  axios.get('http://127.0.0.1:5000/user/me',{'headers':{'Authorization':"Bearer "+localStorage.getItem('token')}}).then((res)=>{
-      setstate({name:res.data.userName})
-      console.log('successs')
-   })
+  // axios.get('http://127.0.0.1:5000/user/me',{'headers':{'Authorization':"Bearer "+localStorage.getItem('token')}}).then((res)=>{
+  //     setstate({name:res.data.userName})
+  //     console.log('successs')
+  //  })
+  
+
   const handleImage = (e) => {
     // console.log(e.target.value);
     // axios.post("127.0.0.1:5000/user/avatar" , {}, {'headers': {'Authorization': 'Bearer '+ localStorage.getItem('token')}} )
@@ -131,7 +79,7 @@ function Navbar() {
               <button type="button" style={{cursor: 'pointer'}}   onClick={onClickHandler}>Upload</button> */}
              <div className="welcome" ><h2>Welcome {signupstate.name }!</h2></div>
            
-             <NavLink to='/myrooms' className='nav-links'>MY ROOMS</NavLink>
+             <NavLink to='/myrooms' className='nav-links' >MY ROOMS</NavLink>
             <div className="menu-icon" onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
             </div>

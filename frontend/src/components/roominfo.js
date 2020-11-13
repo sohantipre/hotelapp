@@ -2,6 +2,7 @@ const rooms=[
 {
   id:1,
   num:1,
+  num2:1,
   description:'highly ventilated',
   name:'mariana',
   capacity:4,
@@ -15,6 +16,7 @@ const rooms=[
 {
     id:2,
     num:2,
+    num2:1,
     description:'quality infrastructure',
     name:'gloria',
     capacity:1,
@@ -26,6 +28,7 @@ const rooms=[
 {
       id:3,
       num:3,
+      num2:1,
     description:'posh',
     name:'seral',
     capacity:2,
@@ -37,6 +40,7 @@ const rooms=[
   {
     id:4,
     num:4,
+    num2:1,
     description:'cool surrounding',
     name:'puriata',
     capacity:5,
@@ -48,6 +52,7 @@ const rooms=[
   {
       id:5,
       num:5,
+      num2:1,
     description:'highly fascinating colours',
     name:'flatinane',
     capacity:5,
@@ -70,6 +75,7 @@ const rooms=[
   {
     id:7,
     num:7,
+    num2:1,
     description:'good for one night stay',
     name:'mavericia',
     capacity:3,
@@ -81,6 +87,7 @@ const rooms=[
   {
     id:8,
     num:8,
+    num2:1,
     description:'highly entertaining with game zone just by side ',
     name:'glovirana',
     capacity:2,
@@ -93,6 +100,7 @@ const rooms=[
  {
     id:9,
     num:9,
+    num2:1,
     description:'for foodies, with cafe just by side',
     name:'perciant',
     capacity:2,
@@ -104,6 +112,7 @@ const rooms=[
   {
     id:10,
     num:10,
+    num2:1,
     description:'budget friendly',
     name:'coral',
     capacity:3,
@@ -115,6 +124,7 @@ const rooms=[
   {
     id:11,
     num:11,
+    num2:1,
     description:'good for moderate expenses',
     name:'flambiant',
     capacity:5,
@@ -127,6 +137,7 @@ const rooms=[
   {
     id:12,
     num:12,
+    num2:1,
     description:'most expensive one with almost all facilities!!!',
     name:'glamouren',
     capacity:3,

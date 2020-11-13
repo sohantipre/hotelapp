@@ -26,6 +26,10 @@ const roomSchema = new mongoose.Schema({
         type: Number,
         required:true
     },
+    number:{
+        type:Number,
+        required:true
+    },
     customer:{
         type:mongoose.Schema.Types.ObjectId,
         required:true,

@@ -28,7 +28,7 @@ router.get("/room",auth,async(req,res)=>{
   }
   
 })
-router.get("/room/:id",async(req,res)=>{
+router.get("/room/:id",auth,async(req,res)=>{
     const _id=req.params.id
    try{ const room=await Room.findById(_id)
     if(!room){
@@ -40,15 +40,30 @@ router.get("/room/:id",async(req,res)=>{
         res.status(500).send()
     }
 })
-router.delete("/room/:id",async(req,res)=>{
-    try{ const room=await Room.findById(req.params.id)
-    if(!room){
-       return res.status(404).send()
+// router.delete("/room/:id",auth,async(req,res)=>{
+//     try{ const room=await Room.findById(req.params.id)
+//     if(!room){
+//        return res.status(404).send()
+//     }
+//      res.status(201).send(room)
+//     }catch(e){
+//         res.status(500).send(e)
+//     }
+// })
+router.delete("/room/:id", auth, async (req, res) => {
+    try {
+      // const task = await Task.findByIdAndDelete(req.params.id);
+      const room = await Room.findOneAndDelete({
+        _id: req.params.id,
+        customer: req.user._id
+      });
+      if (!room) {
+        return res.status(404).send();
+      }
+      res.send(room);
+    } catch (e) {
+      res.status(400).send(e);
     }
-     res.status(201).send(room)
-    }catch(e){
-        res.status(500).send(e)
-    }
-})
+  });
 
 module.exports=router
