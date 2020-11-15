@@ -1,4 +1,6 @@
 
+import {FaInstagram} from 'react-icons/fa'
+
 import React,{useState} from 'react'
 import {Button} from '@material-ui/core'
 // import {TextField} from '@material-ui/core'
@@ -51,21 +53,30 @@ const history=useHistory()
 
 
 
-return <div >
-<ValidatorForm onSubmit={handlesubmit}  className="form" > 
+return <div className="form">
+<div className='formbox'>
+<ValidatorForm onSubmit={handlesubmit}   > 
 
 <h1>SIGNIN FORM</h1>
 <h2 className='formcomponent errormessage'>{formstate.errormessage}</h2>
- <div className="formcomponent"><TextValidator className='input' className='input' onChange={handlechange} value={formstate.email} name='email' validators={['required','isEmail']} errorMessages={['this field is required','email is invalid']} variant='outlined' placeholder='email'></TextValidator></div>
+ <div className="formcomponent"><TextValidator className='input' onChange={handlechange} value={formstate.email} name='email' validators={['required','isEmail']} errorMessages={['this field is required','email is invalid']} variant='outlined' placeholder='email'></TextValidator></div>
  <div className="formcomponent"><TextValidator className='input' onChange={handlechange} value={formstate.password} type='password' name='password' variant='outlined' validators={['required']} errorMessages={['this field is required']} placeholder='password'></TextValidator></div>
- <Button type="submit"  variant='contained' color="primary" >LOGIN</Button>   
- <h3>not signed up yet?</h3>
+ <div className='actionbutton'>
+ <Button className='actionbutton' type="submit"  variant='contained' color="primary" >LOGIN</Button> 
+ <img className='icon' src='https://tse4.mm.bing.net/th?id=OIP.B-eF8Cb4ai7Hp_VK50ya9wHaHa&pid=Api&P=0&w=300&h=300'></img>
+ <img className='icon' src='https://tse2.mm.bing.net/th?id=OIP.R0tdoRzEHXkFY-9H9Jp5xwHaHa&pid=Api&P=0&w=300&h=300'></img>
+ <img className='icon' src='https://tse3.mm.bing.net/th?id=OIP.3L_2Ihtz40xFpk6E7S0t6wHaHa&pid=Api&P=0&w=300&h=300'></img>
+ <img className='icon' src='https://tse1.mm.bing.net/th?id=OIP.7pfHXvoXERQxzCHUG2fnXAHaHa&pid=Api&P=0&w=300&h=300'></img>
+ </div>
+ 
+ <h3>Don't have an account?</h3>
  <NavLink to='/signup'>SIGNUP</NavLink>
+ 
  {/* <Formfooter /> */}
  
 
  </ValidatorForm>
-
+ </div>
 </div>
 
 

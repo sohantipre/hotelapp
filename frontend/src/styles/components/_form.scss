@@ -8,16 +8,32 @@
     justify-content: center;
     align-items: center;
     // background-image: url('https://media.alienwarearena.com/media/wallpapers-3d-hotel-design-hd-wallpaper-artistic-hd-wallpapers.jpg');
-    background-image: url('https://i.pinimg.com/originals/46/1d/25/461d254f8563f8945ce3a385f289df17.jpg');
-   
+    // background-image: url('https://i.pinimg.com/originals/46/1d/25/461d254f8563f8945ce3a385f289df17.jpg');
+    background-image: url('https://images.unsplash.com/photo-1488342994276-7c3bc0742042?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
     background-size: cover;
-    
+    // background: #333744;
   
     h1{
-        color: rgb(170, 121, 36);
+        color:white;
+        padding-right: 2rem;
+        white-space: nowrap;
+        font-style: italic;
     }
     
   
+}
+.formtitle{
+
+padding-right: 3rem;
+color: white;
+
+}
+.formbox{
+    box-shadow: 0px 0px 10px 1px #1D1F26;
+    background:#708090;
+    padding: 24px;
+    width: 260px;
+    
 }
 
 
@@ -29,14 +45,17 @@
 }
 .formcomponent{
     margin-bottom:1rem;
-    border:2px solid white;
+    border:0.5px solid white;
     ::placeholder{
         color:white;
     }
+    border-radius: 1px;
     
 }
 .errormessage{
-    color:red
+    color:red;
+    border:1px solid #708090;
+    
 }
 // .input{
 //      ;
@@ -57,5 +76,14 @@ color: red;
     margin-top: 2rem;
     width:12rem;
     height:3rem;
-    color: red;
+    
     }
+.icon{
+margin: 1rem 1rem 1rem 1rem;
+height:1rem;
+
+}
+// .footer{
+// margin-top: 2rem;
+
+// }

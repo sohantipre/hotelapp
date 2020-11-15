@@ -1,6 +1,7 @@
+
 import React from 'react'
 import Room from './room'
-import rooms from './roominfo'
+import rooms from './homeroominfo'
 
 
 function createroom(room){
@@ -22,11 +23,7 @@ capacity={room.capacity}
 
 
 function Renderroom(){
-return <div className='multiplerooms'>
-{rooms.map(createroom)}
-
-
-</div>
+return <div className='multiplerooms'>{rooms.map(createroom)}</div>
 
 
 

@@ -48,12 +48,13 @@ const history=useHistory()
 
 
 
-return <div>
-<ValidatorForm onSubmit={handlesubmit} className="form"> 
+return <div className="form">
+<div className='formbox'>
+<ValidatorForm onSubmit={handlesubmit} > 
 
-<h1>SIGNUP FORM</h1>
+<h1 className='formtitle'>SIGNUP FORM</h1>
 
-<div className="errorbox">{formstate.error}</div>
+<div className="formcomponent errormessage">{formstate.error}</div>
 <div className="formcomponent"><TextValidator className='input' onChange={handlechange}  value={formstate.name} name='name' validators={['required']} errorMessages={['this field is required']} variant='outlined' placeholder='name'></TextValidator></div>
  <div className="formcomponent"><TextValidator className='input' onChange={handlechange} value={formstate.email} name='email' validators={['required','isEmail']} errorMessages={['this field is required','email is invalid']} variant='outlined' placeholder='email'></TextValidator></div>
  <div className="formcomponent"><TextValidator className='input' onChange={handlechange} type ='password' value={formstate.password} name='password' variant='outlined' validators={['required']} errorMessages={['this field is required']} placeholder='password'></TextValidator></div>
@@ -63,13 +64,20 @@ return <div>
      <option value='male'>Male</option>
      <option value='female'>Female</option>
      </select> */}
+ <div className='actionbutton'>
  <Button className='actionbutton' type="submit"  variant='contained' color="primary" >SIGNUP</Button>   
- <h3>link to signin form</h3>
+ <img className='icon' src='https://tse4.mm.bing.net/th?id=OIP.B-eF8Cb4ai7Hp_VK50ya9wHaHa&pid=Api&P=0&w=300&h=300'></img>
+ <img className='icon' src='https://tse2.mm.bing.net/th?id=OIP.R0tdoRzEHXkFY-9H9Jp5xwHaHa&pid=Api&P=0&w=300&h=300'></img>
+ <img className='icon' src='https://tse3.mm.bing.net/th?id=OIP.3L_2Ihtz40xFpk6E7S0t6wHaHa&pid=Api&P=0&w=300&h=300'></img>
+ <img className='icon' src='https://tse1.mm.bing.net/th?id=OIP.7pfHXvoXERQxzCHUG2fnXAHaHa&pid=Api&P=0&w=300&h=300'></img>
+ </div>
+ 
+ <h3>Already Signed Up?</h3>
  <NavLink to='/'>SIGNIN</NavLink>
  
 
  </ValidatorForm>
-
+ </div>
 </div>
 
 

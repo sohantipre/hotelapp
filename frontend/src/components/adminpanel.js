@@ -24,13 +24,16 @@ function Navbar() {
   const closeMobileMenu = () => setClick(false);
 
   const handleLogout = () => {
-    axios.post("http://127.0.0.1:5000/user/logout" , {} , {'headers' : {'Authorization': 'Bearer ' + localStorage.getItem('token')}})
-      .then((res) => {
+    localStorage.removeItem('token')
         history.push("/")
-      })
-      .catch((e) => {
-        console.log(e);
-      })
+    // axios.post("http://127.0.0.1:5000/user/logout" , {}, {'headers' : {'Authorization': 'Bearer ' + localStorage.getItem('token')}})
+    //   .then((res) => {
+    //     localStorage.removeItem('token')
+    //     history.push("/")
+    //   })
+    //   .catch((e) => {
+    //     console.log(e);
+    //   })
   };
   // axios.get('http://127.0.0.1:5000/user/me',{'headers':{'Authorization':"Bearer "+localStorage.getItem('token')}}).then((res)=>{
   //     setstate({name:res.data.userName})
@@ -96,6 +99,15 @@ function Navbar() {
                   onClick={closeMobileMenu}
                 >
                   About Us
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  to="/Allrooms"
+                  className="nav-links"
+                  onClick={closeMobileMenu}
+                >
+                  All Rooms
                 </Link>
               </li>
               <li className="nav-item">

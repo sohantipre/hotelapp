@@ -147,7 +147,155 @@ const rooms=[
 
     info:'Experience the beauty of an Executive Room at PREMIER. Spacious rooms decorated in contemporary style with wooden furnishing offering views of the town of Bansko and hotel surrounding area. '
 
+  },{
+    id:13,
+    num:13,
+    num2:1,
+    description:'Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray',
+    name:'mariguana',
+    capacity:4,
+    price:2500,
+    floor:7,
+    url:'https://github.com/john-smilga/react-beach-resort-project/blob/master/src/images/room-1.jpeg?raw=true',
+    info:'All our guestrooms are elegantly furnished with handmade furniture include luxury en-suite facilities with complimentary amenities pack, flat screen LCD TV, tea/coffee making facilities, fan, hairdryer and the finest pure white linen and towels.'
+  
   }
+  ,
+  {
+      id:14,
+      num:14,
+      num2:1,
+      description:'Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray',
+      name:'gloricia',
+      capacity:1,
+      price:1800,
+      floor:4,
+      url:'https://github.com/john-smilga/react-beach-resort-project/blob/master/src/images/room-12.jpeg?raw=true',
+      info:'Our king size four poster provides views over landscaped gardens. It has a seating area, ample storage, digital safe, minibar and luxurious duck down bedding.'
+    },
+  {
+        id:15,
+        num:15,
+        num2:1,
+      description:'Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray',
+      name:'sentinum',
+      capacity:2,
+      price:1500,
+      floor:3,
+      url:'https://github.com/john-smilga/react-beach-resort-project/blob/master/src/images/room-2.jpeg?raw=true',
+      info:'Our king size sleigh bedded also provides views over landscaped gardens. It has ample storage, a seating area, digital safe, minibar and luxurious duck down bedding.'
+    },
+    {
+      id:16,
+      num:16,
+      num2:1,
+      description:'Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray',
+      name:'vedurus',
+      capacity:5,
+      price:2000,
+      floor:3,
+      url:'https://github.com/john-smilga/react-beach-resort-project/blob/master/src/images/room-3.jpeg?raw=true',
+      info:'Our Deluxe king size room has a seating area, ample storage, digital safe, minibar and luxurious duck down bedding. This room can also be configured with an extra roll-away bed for families of 3'
+    },
+    {
+        id:17,
+        num:17,
+        num2:1,
+      description:'Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray',
+      name:'floraine',
+      capacity:5,
+      price:1900,
+      floor:5,
+      url:'https://github.com/john-smilga/react-beach-resort-project/blob/master/src/images/room-4.jpeg?raw=true',
+      info:'Our Deluxe Twin/Large Double also provides views over landscaped gardens. It has a seating area, digital safe, minibar and luxurious duck down bedding. This room can be configured with either 2 single beds or zip and linked to provide a large double bed.'
+    },
+   {
+      id:18,
+      num:18,
+      description:'Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray',
+      name:'silana',
+      capacity:4,
+      price:2300,
+      floor:2,
+      url:'https://github.com/john-smilga/react-beach-resort-project/blob/master/src/images/room-5.jpeg?raw=true',
+      info:'As our smallest budget rooms, the Compact bedrooms are suited for single occupancy or short-stay double occupancy as they have limited space and storage.'
+    },
+    {
+      id:19,
+      num:19,
+      num2:1,
+      description:'Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray',
+      name:'maveric',
+      capacity:3,
+      price:4500,
+      floor:4,
+      url:'https://github.com/john-smilga/react-beach-resort-project/blob/master/src/images/room-6.jpeg?raw=true',
+      info:'This is the perfect suite to accommodate a family! It offers two separate bedrooms, with a double bed and bunk bed respectively and a bathroom with a walk-in shower'
+    },
+    {
+      id:20,
+      num:20,
+      num2:1,
+      description:'highly entertaining with game zone just by side ',
+      name:'titanus',
+      capacity:2,
+      price:3000,
+      floor:5,
+      url:'https://github.com/john-smilga/react-beach-resort-project/blob/master/src/images/room-11.jpeg?raw=true',
+  
+      info:'Designed to inspire rest and relaxation, our sleek, modern guest rooms create a feeling of home with peaceful color tones and mountain chic décor. Each room features a king-sized bed or two queen-sized beds, air conditioning and full-size bathroom with granite counter tops and marble floors. Deluxe rooms come fully equipped with state-of-the-art amenities including a Samsung smart TV, iHome docking station, USB ports, Keurig Coffee Brewer, mini-fridge, humidifier, in-room safe, plush robes and slippers, and Wi-Fi. All rooms are non-smoking and views vary from beautiful mountain scenery to the iconic Vail Village and our own Pool One.'
+    },
+   {
+      id:21,
+      num:21,
+      num2:1,
+      description:'Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray',
+      name:'petriart',
+      capacity:2,
+      price:2400,
+      floor:1,
+      url:'https://github.com/john-smilga/react-beach-resort-project/blob/master/src/images/room-7.jpeg?raw=true',
+      info:'Luxury One Bedroom Suites feature a bedroom with king-sized bed, an oversized bathroom with double vanity and marble floors; and a separate sitting area with gas fireplace, and a wet bar. Each suite also offers spectacular views of Vail Mountain.'
+    },
+    {
+      id:22,
+      num:22,
+      num2:1,
+      description:'Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray',
+      name:'carvan',
+      capacity:3,
+      price:2200,
+      floor:3,
+      url:'https://github.com/john-smilga/react-beach-resort-project/blob/master/src/images/room-8.jpeg?raw=true',
+      info:'Smart hospitality with amazing mountain views, fine fabrics, art and wooden furnishings, these rooms offer Pirin Mountain view. Relax in the cozy double or twin bed or enjoy a glass of wine on your private balcony and unwind'
+    },
+    {
+      id:23,
+      num:23,
+      num2:1,
+      description:'Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray',
+      name:'glora',
+      capacity:5,
+      price:2000,
+      floor:2,
+      url:'https://github.com/john-smilga/react-beach-resort-project/blob/master/src/images/room-9.jpeg?raw=true',
+  
+      info:'This is the perfect suite to accommodate a family! It offers two separate bedrooms, with a double bed and bunk bed respectively and a bathroom with a walk-in shower.'
+    },
+    {
+      id:24,
+      num:24,
+      num2:1,
+      description:'Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray',
+      name:'fab',
+      capacity:3,
+      price:5500,
+      floor:3,
+      url:'https://github.com/john-smilga/react-beach-resort-project/blob/master/src/images/room-10.jpeg?raw=true',
+  
+      info:'Experience the beauty of an Executive Room at PREMIER. Spacious rooms decorated in contemporary style with wooden furnishing offering views of the town of Bansko and hotel surrounding area. '
+  
+    }
 
 
 
